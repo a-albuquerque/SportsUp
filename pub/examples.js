@@ -1,0 +1,3 @@
+new IBCG().init('#ibcg').render();
+new IBCG().init('#ibcg-2').render().import('eyIxIjp7InRhYmxlX25hbWVzIjpbIkNBIiwiVVMiXSwidGFibGVfdmFscyI6WyIxMCIsIjgiXX0sInNlbGVjdF9tYXBwaW5nIjpbWyJEZWZhdWx0IiwxXV19');
+new IBCG().init('#ibcg-3').render().import('eyIxIjp7InRhYmxlX25hbWVzIjpbIkNBIiwiVVMiXSwidGFibGVfdmFscyI6WyIxMCIsIjgiXX0sIjIiOnsidGFibGVfbmFtZXMiOlsiUG9wdWxhdGlvbiBBZnJpY2EiLCJQb3B1bGF0aW9uIEFzaWEiLCJQb3B1bGF0aW9uIEF1c3RyYWxpYSJdLCJ0YWJsZV92YWxzIjpbIjgyMyIsIjQ1NiIsIjEyNiJdfSwic2VsZWN0X21hcHBpbmciOltbIkRlZmF1bHQiLDFdLFsiTGVzc29uIDIiLDJdXX0=');
