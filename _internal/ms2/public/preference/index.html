@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Disclosure: Used Bootstrap's official starter template - https://getbootstrap.com/docs/5.1/getting-started/introduction/ -->
+<!-- Disclosure: Inspired by https://mdbootstrap.com/ tutorial -->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Sports Up</title>
+</head>
+
+<body>
+
+    <!-- SIMPLIFIED NAVBAR to be used for prefrence screen -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../login/index.html">Sports Up</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <form class="d-flex">
+                        <button onclick='window.location = "/users/logout"' class="btn btn-outline-light" type="button">Logout</button>
+                </form>
+            </button>
+        </div>
+    </nav>
+    <!-- SIMPLIFIED NAVBAR -->
+
+
+    <!-- MAIN CODE -->
+
+    <div id="pageTitle" class="container mt-6">
+      <br> <br>
+      <h1> Profile and Preferences</h1>
+    </div>
+
+    <div class="container mt-5">
+      <div class="card">
+          <div class="card-body">
+            
+            <h5>Basic Info 
+            </h4>
+            <br>
+            <form>
+              <div class="row">
+                <div class="col">
+                  <input id="firstName" type="text" class="form-control" placeholder="First name">
+                </div>
+
+                <br>
+                
+                <div class="col">
+                  <input id="lastName" type="text" class="form-control" placeholder="Last name">
+                </div>
+
+                <div class="col">
+                  <input id="age" type="text" class="form-control" placeholder="Age">
+                </div>
+
+              </div>
+              
+              <br>
+
+              <div class="form-inline">
+
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="male" value="male">
+                  <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="female" value="female">
+                  <label class="form-check-label" for="female">Female</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="otherGender" value="otherGender">
+                  <label class="form-check-label" for="other">Other</label>
+                </div>
+              </div>
+
+            </form>
+
+
+
+          </div>
+      </div>
+
+      <div class="card mt-3">
+          <div class="card-body">
+              <h5>Your sports / activities of interest</h5>
+              <br>
+
+              <div class="row">
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input" value="American Football" id="American Football">
+                      <label class="custom-control-label" for="American Football">American Football</label>
+                    </div>
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input"  value="Badminton" id="Badminton">
+                      <label class="custom-control-label" for="Badminton">Badminton</label>
+                    </div>      
+              </div>
+
+              <div class="row">
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input" value="Baseball" id="Baseball">
+                      <label class="custom-control-label" for="Baseball">Baseball</label>
+                    </div>
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input"  value="Basketball" id="Basketball">
+                      <label class="custom-control-label" for="Basketball">Basketball</label>
+                    </div>
+              </div>
+
+              <div class="row">
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input" value="Bowling" id="Bowling">
+                      <label class="custom-control-label" for="Bowling">Bowling</label>
+                    </div>
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input"  value="Boxing" id="Boxing">
+                      <label class="custom-control-label" for="Boxing">Boxing</label>
+                    </div>
+              </div>
+              
+              <div class="row">
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input" value="Car competition" id="Car competition">
+                      <label class="custom-control-label" for="Car competition">Car competition</label>
+                    </div>
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input"  value="Cooper (walking)" id="Cooper (walking)">
+                      <label class="custom-control-label" for="Cooper (alking)">Cooper (Walking)</label>
+                    </div>
+              </div>
+
+              <div class="row">
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input" value="Cricket" id="Cricket">
+                      <label class="custom-control-label" for="Cricket">Cricket</label>
+                    </div>
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input"  value="Cycling" id="Cycling">
+                      <label class="custom-control-label" for="Cycling">Cycling</label>
+                    </div>
+              </div>
+              <div class="row">
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input" value="Equestrianism" id="Equestrianism">
+                      <label class="custom-control-label" for="Equestrianism">Equestrianism</label>
+                    </div>
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input"  value="Field Hockey" id="Field Hockey">
+                      <label class="custom-control-label" for="Field Hockey">Field Hockey</label>
+                    </div>
+              </div>
+
+              <div class="row">          
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input" value="Golf" id="Golf">
+                      <label class="custom-control-label" for="Golf">Golf</label>
+                    </div>
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input"  value="Handball" id="Handball">
+                      <label class="custom-control-label" for="Handball">Handball</label>
+                    </div>
+              </div>
+
+              <div class="row">
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input" value="Hurling" id="Hurling">
+                      <label class="custom-control-label" for="Hurling">Hurling</label>
+                    </div>
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input"  value="Ice Hockey" id="Ice Hockey">
+                      <label class="custom-control-label" for="Ice Hockey">Ice Hockey</label>
+                    </div>
+              </div>
+
+              <div class="row">
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input" value="Lacrosse" id="Lacrosse">
+                      <label class="custom-control-label" for="Lacrosse">Lacrosse</label>
+                    </div>
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input"  value="Rugby" id="Rugby">
+                      <label class="custom-control-label" for="Rugby">Rugby</label>
+                    </div>
+              </div>
+
+              <div class="row">
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input" value="Running" id="Running">
+                      <label class="custom-control-label" for="Running">Running</label>
+                    </div>
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input"  value="Skiing" id="Skiing">
+                      <label class="custom-control-label" for="Skiing">Skiing</label>
+                    </div>
+              </div>
+
+              <div class="row">
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input" value="Soccer" id="Soccer">
+                      <label class="custom-control-label" for="Soccer">Soccer</label>
+                    </div>
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input"  value="Swimming" id="Swimming">
+                      <label class="custom-control-label" for="Swimming">Swimming</label>
+                    </div>
+              </div>
+
+              <div class="row">
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input" value="Table Tennis" id="Table Tennis">
+                      <label class="custom-control-label" for="Table Tennis">Table Tennis</label>
+                    </div>
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input"  value="Tennis" id="Tennis">
+                      <label class="custom-control-label" for="Tennis">Tennis</label>
+                    </div>
+              </div>
+
+              <div class="row">
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input" value="Tracking (Outdoors)" id="Tracking (Outdoors)">
+                      <label class="custom-control-label" for="Tracking (Outdoors)">Tracking (Outdoors)</label>
+                    </div>
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input"  value="Volleyball" id="Volleyball">
+                      <label class="custom-control-label" for="Volleyball">Volleyball</label>
+                    </div>
+              </div>
+
+              <div class="row">
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input" value="Water Polo" id="Water Polo">
+                      <label class="custom-control-label" for="Water Polo">Water Polo</label>
+                    </div>
+                    <div class="custom-control custom-switch col">
+                      <input type="checkbox" name="sport" class="custom-control-input"  value="Wrestling" id="Wrestling">
+                      <label class="custom-control-label" for="Wrestling">Wrestling</label>
+                    </div>
+              </div>
+
+          </div>
+      </div>
+
+
+      <div class="card mt-3">
+        <div class="card-body">
+            <h5>Location where to suggest sports partners / events</h5>
+            <br>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="province">Province</label>
+                <select id="province" class="form-control">
+                  <option value="AB">Alberta</option>
+                  <option value="BC">British Columbia</option>
+                  <option value="MB">Manitoba</option>
+                  <option value="NB">New Brunswick</option>
+                  <option value="NL">Newfoundland and Labrador</option>
+                  <option value="NS">Nova Scotia</option>
+                  <option selected value="ON">Ontario</option>
+                  <option value="PE">Prince Edward Island</option>
+                  <option value="QC">Quebec</option>
+                  <option value="SK">Saskatchewan</option>
+                  <option value="NT">Northwest Territories</option>
+                  <option value="NU">Nunavut</option>
+                  <option value="YT">Yukon</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="postalCode">Postal Code</label>
+                <input type="text" class="form-control" id="postalCode">
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card mt-3">
+      <div class="card-body">
+          <h5>Help future sport buddies to know more about you!</h5>
+          <br>
+        <form>
+          <div class="form-group">
+            <label for="description">Summary Description</label>
+            <textarea class="form-control" id="description" rows="3"></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+    <div class="card mt-3">
+      <div class="card-body">
+          <h5>How people with same interests may contact you?</h5>
+          <br>
+          <div class="row">
+            <div class="col">
+              <select id=handle class="custom-select">
+                <option selected>Select</option>
+                <option value="phone">phone</option>
+                <option value="email">email</option>
+                <option value="facebook">Facebook</option>
+                <option value="twitter">Twitter</option>
+                <option value="instagram">Instagram</option> 
+                <option value="pinterest" class="fab fa-pinterest"></option>
+                <option value="whatsapp"></option>
+              </select>
+            </div>
+            <br>
+            <div class="col">
+              <form>
+                <div class="form-group">
+                  <!--  <label for="description">Number/email/username</label> -->
+                  <textarea class="form-control" id="contact" rows="1"></textarea>
+                </div>
+              </form>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <br><br>
+    
+    <div class="card mt-3">
+      <div class="card-body" id="submitLocation">
+        <button type="button" id="submit" class="btn btn-primary btn-lg btn-block">Save and Let's Get Started!!</button>
+      </div>
+    </div>
+
+    <br><br><br>
+
+
+    
+    <script type="text/javascript" src="./script.js"></script>
+    <!-- END OF MAIN CODE -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

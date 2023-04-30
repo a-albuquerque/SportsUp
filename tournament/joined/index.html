@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Disclosure: Used Bootstrap's official starter template - https://getbootstrap.com/docs/5.1/getting-started/introduction/ -->
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!--External CSS File-->
+    <link 
+        href="./style.css"
+        rel="stylesheet"
+    >
+
+    <title>Sports Up</title>
+  </head>
+
+  <body>
+    <!-- Disclosure: Navbar adapted from bootstrap docs -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/meet/discover/index.html">Sports Up</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" href="/preference?userId=1">My Profile</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarScrollingDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                People
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/meet/discover/index.html"
+                    >Discover New People</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/meet/followed/index.html"
+                    >Followed People</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarScrollingDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Tournament
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/tournament/joined/index.html"
+                    >Joined Tournaments</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/tournament/discover/index.html"
+                    >Discover New Tournaments</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/tournament/created/index.html"
+                    >Created Tournaments</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <form class="d-flex">
+            <a href="/login/index.html">
+              <button class="btn btn-outline-light" type="button">
+                Logout
+              </button>
+            </a>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Add Main Code Here -->
+    <div style="display: none" id="no-contents" class="container mt-5">
+      <h3>You have not joined any tournament yet.</h3>
+    </div>
+
+    <div style="display: none" id="all-contents" class="container mt-5">
+      <div class=".container text-center text-primary main-header">
+          <p class="h2">Joined Tournaments</p>
+        </div>
+    
+        <div class="container" id="container-to-add">
+              <!-- <div class="row row-bottom">
+              <div class="col-sm-6">
+                  <div class="card">
+                  <div class="card-body">
+                      <h4>XXX Tennis Tournament <span style="transform: translateY(-3px);" class="badge bg-secondary ms-2">Tennis</span>
+                      </h4>
+                      <p class="card-text">Date: 19th December, 2022</p>
+                      <p class="card-text">Location: Toronto</p>
+                  </div>
+                  </div>
+              </div>
+              <div class="col-sm-6">
+                  <a href="../get/index.html?tournamentId=3" class="btn btn-primary" style="position: relative; top:35%; left: 30%;">View</a>
+                  </div>
+              </div>
+              <div class="row row-bottom">
+                  <div class="col-sm-6">
+                  <div class="card">
+                      <div class="card-body">
+                      <h4>XYZ Marathon <span style="transform: translateY(-3px);" class="badge  bg-secondary ms-2">Running</span>
+                      </h4>
+                      <p class="card-text">Date: 13th June, 2022</p>
+                      <p class="card-text">Location: London, UK</p>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="col-sm-6">
+                  <a href="../get/index.html?tournamentId=4" class="btn btn-primary" style="position: relative; top:35%; left: 30%;">View</a>
+                  </div>
+                  </div>
+
+                  <div class="row row-bottom">
+                      <div class="col-sm-6">
+                      <div class="card">
+                          <div class="card-body">
+                          <h4>Inter-State Frisbee Tournament <span style="transform: translateY(-3px);" class="badge bg-secondary ms-2">Frisbee</span>
+                          </h4>
+                          <p class="card-text">Date: 20th May, 2022</p>
+                          <p class="card-text">Location: Spain</p>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="col-sm-6">
+                      <a href="../get/index.html?tournamentId=5" class="btn btn-primary" style="position: relative; top:35%; left: 30%;">View</a>
+                      </div>
+                      </div> -->
+    
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Add Main Code Here -->
+
+    <!-- JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- External Javascript File -->
+    <script src="./script.js"></script>
+
+  </body>
+</html>

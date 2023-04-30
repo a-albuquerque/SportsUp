@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example use of IBCG</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <h1>Example Use of IBCG</h1>
+
+    <p>
+        IBCG creates realtime interactive multi state graphs where you can export and import states for anyboady learning to play around with the data.
+    </p>
+
+    <p>Features of this release</p>
+    
+    <ol>
+        <li>Auto normalization of datapoints to fit at 75% of the canvas height.</li>
+        <li>Toggling between multiple graph workspaces.</li>
+        <li>Importing and exporting a multi workspace state.</li>
+        <li>Responsive graph visualization that adjusts datapoint width with respect to available space.</li>
+    </ol>
+
+    <h4>Example demonstrating the empty state when a Professor/TA wants to demonstrate graphs from scratch</h4>
+
+    <pre><code>
+new IBCG().init('#ibcg').render();
+    </code></pre>
+
+    <div id="ibcg">
+        <!-- Inject IBCG Here -->
+    </div>
+
+    <h4>Example demonstrating rendering a prepoulated state by code (Import code generated from creating graphs and exporting state) </h4>
+
+    <pre><code>
+new IBCG()
+    .init('#ibcg-2')
+    .render()
+    .import('eyIxIjp7InRhYmxlX25hbWVzIjpbIkNBIiwiVVMiXSwidGFibGVfdmFscyI6WyIxMCIsIjgiXX0sInNlbGVjdF9tYXBwaW5nIjpbWyJEZWZhdWx0IiwxXV19');
+    </code></pre>
+        
+
+    <div id="ibcg-2">
+        <!-- Inject IBCG Here -->
+    </div>
+
+    <h4>Example demonstrating a multi-graph workspace (Click select graph and choose Lesson 2)</h4>
+
+    <pre><code>
+new IBCG()
+    .init('#ibcg-2')
+    .render()
+    .import(
+        'eyIxIjp7InRhYmxlX25hbWVzIjpbIkNBIiwiVVMiXSwidG
+         FibGVfdmFscyI6WyIxMCIsIjgiXX0sIjIiOnsidGFibGVf
+         bmFtZXMiOlsiUG9wdWxhdGlvbiBBZnJpY2EiLCJQb3B1bG
+         F0aW9uIEFzaWEiLCJQb3B1bGF0aW9uIEF1c3RyYWxpYSJd
+         LCJ0YWJsZV92YWxzIjpbIjgyMyIsIjQ1NiIsIjEyNiJdfS
+         wic2VsZWN0X21hcHBpbmciOltbIkRlZmF1bHQiLDFdLFsi
+         TGVzc29uIDIiLDJdXX0='
+    );
+    </code></pre>
+        
+
+    <div id="ibcg-3">
+        <!-- Inject IBCG Here -->
+    </div>
+
+    
+
+    <script src="ibcg.js"></script>
+    <script src="examples.js"></script>
+
+</body>
+
+</html>

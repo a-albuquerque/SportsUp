@@ -1,0 +1,27 @@
+.main-header {
+  margin-bottom: 30px;
+}
+
+.row-bottom {
+  margin-bottom: 20px;
+}
+
+.group-item-style {
+  height: 60px;
+  text-align: center;
+  text-decoration: solid;
+  font-size: 30px;
+}
+
+.marginBelow {
+  margin-bottom: 15px;
+}
+
+.badge {
+  margin-left: 10px;
+}
+
+.name-text,
+.about-text {
+  color: #333c83;
+}

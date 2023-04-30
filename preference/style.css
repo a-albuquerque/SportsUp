@@ -1,0 +1,13 @@
+/*-----------------------------------------------------------*/
+/* Preferences collection style */
+/*-----------------------------------------------------------*/
+
+
+#pageTitle h1 {
+	font-weight: bold;
+	text-align: center;
+}
+
+#submitLocation{
+	text-align:center;
+}
