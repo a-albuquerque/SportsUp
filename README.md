@@ -1,4 +1,4 @@
-# SportsUp - Your Sports meet up place
+# SportsUp - Your Sports meet up place - UNDER MAINTENANCE NOW, please check back in a few days
 
 ## https://sportsup.herokuapp.com/
 
