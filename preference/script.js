@@ -182,7 +182,7 @@ function loaad_preferences() {
 
   xhr.open(
     "GET",
-    "https://csc309-backend.herokuapp.com/set-preference/" +
+    "https://sportsupbackend.herokuapp.com/set-preference/" +
       getCookie("user_id")
   );
   xhr.setRequestHeader("Content-Type", "application/json");
@@ -329,7 +329,7 @@ function saveAndGoToDiscoverTournament(e) {
 
   xhr.open(
     "POST",
-    "https://csc309-backend.herokuapp.com/set-preference/" +
+    "https://sportsupbackend.herokuapp.com/set-preference/" +
       getCookie("user_id")
   );
   xhr.setRequestHeader("Content-Type", "application/json");

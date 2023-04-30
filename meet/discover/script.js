@@ -96,7 +96,7 @@ function get_new_person_to_discover() {
 
   xhr.open(
     "GET",
-    "https://csc309-backend.herokuapp.com/discover-people/" +
+    "https://sportsupbackend.herokuapp.com/discover-people/" +
       getCookie("user_id")
   );
   xhr.setRequestHeader("Content-Type", "application/json");
@@ -119,7 +119,7 @@ function followAction() {
 
   xhr.open(
     "POST",
-    "https://csc309-backend.herokuapp.com/follow-person/" +
+    "https://sportsupbackend.herokuapp.com/follow-person/" +
       getCookie("user_id") +
       "/" +
       current_person.personId
@@ -140,7 +140,7 @@ function passAction() {
 
   xhr.open(
     "POST",
-    "https://csc309-backend.herokuapp.com/pass-person/" +
+    "https://sportsupbackend.herokuapp.com/pass-person/" +
       getCookie("user_id") +
       "/" +
       current_person.personId

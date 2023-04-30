@@ -39,7 +39,7 @@ function get_created_tournaments(){
         }
     });
 
-    xhr.open("GET", "https://csc309-backend.herokuapp.com/created-tournaments/" + getCookie("user_id"));
+    xhr.open("GET", "https://sportsupbackend.herokuapp.com/created-tournaments/" + getCookie("user_id"));
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send();
 }

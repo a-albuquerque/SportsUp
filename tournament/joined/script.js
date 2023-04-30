@@ -116,7 +116,7 @@ function get_joined_tournaments() {
 
   xhr.open(
     "GET",
-    "https://csc309-backend.herokuapp.com/joined-tournaments/" +
+    "https://sportsupbackend.herokuapp.com/joined-tournaments/" +
       getCookie("user_id")
   );
   xhr.setRequestHeader("Content-Type", "application/json");

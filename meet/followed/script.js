@@ -132,7 +132,7 @@ function get_followed_people() {
 
   xhr.open(
     "GET",
-    "https://csc309-backend.herokuapp.com/followed-people/" +
+    "https://sportsupbackend.herokuapp.com/followed-people/" +
       getCookie("user_id")
   );
   xhr.setRequestHeader("Content-Type", "application/json");

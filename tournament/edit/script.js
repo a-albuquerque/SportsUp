@@ -31,7 +31,7 @@ function get_tournament() {
 
   var xhr = new XMLHttpRequest();
 
-  // xhr.open("GET", "https://csc309-backend.herokuapp.com/edit-tournament/" + getCookie("user_id" ) + '/' + tournamentId);
+  // xhr.open("GET", "https://sportsupbackend.com/edit-tournament/" + getCookie("user_id" ) + '/' + tournamentId);
 
   xhr.addEventListener("readystatechange", function () {
     if (this.readyState === 4) {
@@ -54,7 +54,7 @@ function get_tournament() {
 
   xhr.open(
     "GET",
-    "https://csc309-backend.herokuapp.com/edit-tournament/" +
+    "https://sportsupbackend.herokuapp.com/edit-tournament/" +
       getCookie("user_id") +
       "/" +
       tournament_id
@@ -119,7 +119,7 @@ function editTournament(e) {
 
   xhr.open(
     "POST",
-    "https://csc309-backend.herokuapp.com/edit-tournament/" +
+    "https://sportsupbackend.com/edit-tournament/" +
       getCookie("user_id") +
       "/" +
       tournament_id

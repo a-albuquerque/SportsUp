@@ -116,7 +116,7 @@ function get_person_info() {
 
   xhr.open(
     "GET",
-    "https://csc309-backend.herokuapp.com/person-info/" +
+    "https://sportsupbackend.herokuapp.com/person-info/" +
       location.search.replace(/^.*?\=/, "")
   );
   xhr.setRequestHeader("Content-Type", "application/json");

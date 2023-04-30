@@ -1,7 +1,7 @@
 /*-----------------------------------------------------------*/
 /*  Handles user login interactions. */
 /*-----------------------------------------------------------*/
-const usersURI = "https://csc309-backend.herokuapp.com/login";
+const usersURI = "https://sportsupbackend.herokuapp.com/login";
 
 let activeUser = false;
 

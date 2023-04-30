@@ -2,7 +2,7 @@
 /*  Handles user registration. */
 /*-----------------------------------------------------------*/
 
-const addUserURI = "https://csc309-backend.herokuapp.com/register";
+const addUserURI = "https://sportsupbackend.herokuapp.com/register";
 
 /* Event listener for registration */
 register.addEventListener("click", addUser);

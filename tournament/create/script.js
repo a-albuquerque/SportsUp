@@ -29,7 +29,7 @@ function createTournament(e) {
 
      var xhr = new XMLHttpRequest();
 
-     xhr.open("POST", "https://csc309-backend.herokuapp.com/create-tournament/" + getCookie("user_id" ));
+     xhr.open("POST", "https://sportsupbackend.herokuapp.com/create-tournament/" + getCookie("user_id" ));
 
      xhr.onreadystatechange = function() { // Call a function when the state changes.
         if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {

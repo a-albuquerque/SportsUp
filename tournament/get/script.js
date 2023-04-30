@@ -21,7 +21,7 @@ function goToJoinedTournaments(e){
 
   var xhr = new XMLHttpRequest();
   // getCookie("user_id") + '/'
-  xhr.open("POST", "https://csc309-backend.herokuapp.com/discover-tournament/" + getCookie("user_id" ) + '/' + activeTournament._id);
+  xhr.open("POST", "https://sportsupbackend.herokuapp.com/discover-tournament/" + getCookie("user_id" ) + '/' + activeTournament._id);
 
   xhr.onreadystatechange = function() { // Call a function when the state changes.
      if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
@@ -42,7 +42,7 @@ function get_tournament(id) {
 
         var xhr = new XMLHttpRequest();
 
-        // xhr.open("GET", "https://csc309-backend.herokuapp.com/edit-tournament/" + getCookie("user_id" ) + '/' + tournamentId);
+        // xhr.open("GET", "https://sportsupbackend.herokuapp.com/edit-tournament/" + getCookie("user_id" ) + '/' + tournamentId);
 
         xhr.addEventListener("readystatechange", function () {
                 if (this.readyState === 4) {
@@ -111,7 +111,7 @@ function get_tournament(id) {
                 }
             });
         // local testing : xhr.open("GET", "http://localhost:5002/edit-tournament/624ddad8a0255c653ed6a8ee/" + id);
-        xhr.open("GET", "https://csc309-backend.herokuapp.com/edit-tournament/" + getCookie("user_id") + '/' + id);
+        xhr.open("GET", "https://sportsupbackend.herokuapp.com/edit-tournament/" + getCookie("user_id") + '/' + id);
         xhr.setRequestHeader("Content-Type", "application/json");
         xhr.send();
 
