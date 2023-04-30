@@ -50,7 +50,7 @@ SportsUp has its backend deployed at a different server than the one which is ho
 
 - The backend is hosted at: https://sportsupbackend.herokuapp.com/
 
-- The database is hosted at MongoDB cloud and can be accessed with the following connection strings: mongodb+srv://mongo-user:nGc7crCIbNMzOr25@maincluster.erymi.mongodb.net/sports_up_db
+- The database is hosted at MongoDB cloud and can be accessed with the following connection strings: redacted, please contact me for collaboration
 
 ## Instructions for Local Deployment
 
